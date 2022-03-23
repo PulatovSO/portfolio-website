@@ -1,0 +1,72 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+// p,
+// h1,
+// h2,
+// h3 {
+//   padding: 0;
+//   margin: 0;
+// }
+
+.container {
+  width: 100%;
+  max-width: $width-container;
+  padding-left: $p-container;
+  padding-right: $p-container;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.border-none {
+  border: 0 !important;
+} 
+
+.order-1 {order: 1;};
+.order-2 {order: 2;};
+.order-3 {order: 3;};
+.order-4 {order: 4;};
+.order-5 {order: 5;};
+
+::-webkit-scrollbar{background:0 0;border:0 none $color-light-green-3b6c58;border-radius:50px;width:5px;height:7px}
+::-webkit-scrollbar-thumb{background: $color-light-green-3b6c58; border:0 none #fff;border-radius:0}
